@@ -1,12 +1,13 @@
 name: autocheck
 
 on:
+  workflow_dispatch:
   push:
   pull_request:
   watch:
     types: [ started ]
   schedule:
-    - cron: 23 8  * * *
+    - cron: '35 0  * * *'
 
 jobs:
   healthcheck:
